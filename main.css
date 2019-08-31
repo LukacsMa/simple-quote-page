@@ -11,6 +11,7 @@ body {
   height: 100vh;
   background-image: url("assets/freedom.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   text-align: center;
   background-size: cover;
   color: #333;
@@ -25,11 +26,29 @@ body {
 
 .quote {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 2.5rem; 
 }
 
 .author {
   font-family: 'Crimson Text', serif;
-  font-size: 1.5rem;
   font-style: italic;
-} 
+}
+
+@media only screen and (min-width: 768px) {
+
+  .quote {
+    font-size: 2.5rem;
+  }
+
+  .author {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+  .wrapper {
+    padding-top: 6rem;
+  }
+  
+}
